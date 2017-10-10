@@ -1,0 +1,44 @@
+nav.menu {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 1em);
+  font-size: 4em;
+  padding: .5em;
+  display: flex;
+  justify-content: space-around; }
+  nav.menu a {
+    color: #339966; }
+
+div.stp-day-count {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 3em;
+  height: calc(100% - 3em); }
+  div.stp-day-count > div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    div.stp-day-count > div.total-days {
+      flex-basis: 100%;
+      font-size: 2em; }
+      div.stp-day-count > div.total-days span, div.stp-day-count > div.total-days svg {
+        height: 200px; }
+    div.stp-day-count > div:not(.total-days) {
+      flex-basis: 50%; }
+    div.stp-day-count > div span, div.stp-day-count > div svg {
+      background-color: #339966;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      div.stp-day-count > div span:first-child, div.stp-day-count > div svg:first-child {
+        border-radius: 25px 0 0 25px;
+        padding-left: 15px; }
+      div.stp-day-count > div span:last-child, div.stp-day-count > div svg:last-child {
+        border-radius: 0 25px 25px 0;
+        padding-right: 15px;
+        font-size: .5em; }
+
+/*# sourceMappingURL=ui.css.map */

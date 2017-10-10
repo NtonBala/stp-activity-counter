@@ -1,0 +1,62 @@
+@import "globals";
+
+nav.menu {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 1em);
+  font-size: 4em;
+  padding: .5em;
+  display: flex;
+  justify-content: space-around;
+
+  a {
+    color: $camouflage;
+  }
+}
+
+div.stp-day-count {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 3em;
+  height: calc(100% - 3em);
+
+    > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &.total-days {
+        flex-basis: 100%;
+        font-size: 2em;
+
+          span, svg {
+            height: 200px;
+          }
+      }
+
+      &:not(.total-days) {
+        flex-basis: 50%;
+      }
+
+      span, svg {
+        background-color: #339966;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:first-child {
+          border-radius: 25px 0 0 25px;
+          padding-left: 15px;
+        }
+
+        &:last-child {
+          border-radius: 0 25px 25px 0;
+          padding-right: 15px;
+          font-size: .5em;
+        }
+      }
+    }
+}
